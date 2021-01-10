@@ -14,14 +14,7 @@ public class Controller {
     private static GameBoardJFrame view;
 
 
-    public static void main(String[]args){
-        start();
-
-    }
-
-
-
-    private static void start(){
+    public void start(){
         model = new GameLogic();
         view = new GameBoardJFrame();
         view.getTicRadioButton().addActionListener(new TicRadioButtonListener());
